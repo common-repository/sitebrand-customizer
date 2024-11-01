@@ -1,0 +1,25 @@
+{
+  "name": "wordpress-identification",
+  "version": "1.0.0",
+  "description": "Plugin that helps your wordpress installation look more customized includes a Page Loader and Custom Login Page using the same settings.",
+  "main": "index.js",
+  "author": "Joao Maridalho",
+  "license": "GNU",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "laravel-mix": "^4.0.15",
+    "resolve-url-loader": "2.3.1",
+    "sass": "^1.20.1",
+    "sass-loader": "7.*",
+    "ts-loader": "^6.0.1",
+    "typescript": "^3.4.5"
+  }
+}
